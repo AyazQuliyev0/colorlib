@@ -10,6 +10,343 @@ body {
   justify-content: center;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Concert One", serif;
   flex-direction: column;
+}
+
+h1, p, h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 1201px) {
+  .mobile-nav {
+    display: none;
+  }
+  .main-nav {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 10%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .main-nav p {
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: rgba(255, 255, 255, 0.5019607843);
+  }
+  .main-nav p:hover {
+    color: #fff;
+    transition: 0.2s;
+  }
+  header {
+    width: 100%;
+    height: 910px;
+    background: url(./img/hero_img-photoaidcom-darken.jpg) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
+  header .header-text-container {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header .header-text-container h2 {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: lighter;
+  }
+  header .header-text-container h1 {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: bolder;
+    font-family: "Concert One", serif;
+  }
+  header .header-text-container p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .my-bio-part {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  main .my-bio-part .my-bio-photo {
+    background: url(./img/image_1_long.jpg.webp) center/cover no-repeat;
+    width: 602px;
+    height: 795px;
+  }
+  main .my-bio-part .dots {
+    width: 264px;
+    height: 304px;
+    background: url(./img/dots.png) center/cover no-repeat;
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    right: 800px;
+  }
+  main .my-bio-part .my-bio-text {
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    height: 720px;
+    margin-left: 100px;
+  }
+  main .my-bio-part .my-bio-text h1 {
+    font-weight: 400;
+    font-size: 48px;
+  }
+  main .my-bio-part .my-bio-text p {
+    color: #939393;
+    margin-top: 20px;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .line p {
+    color: #000;
+    margin-bottom: 15px;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .line div {
+    width: 475px;
+    height: 4px;
+    background: #939393;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .line div div {
+    width: 85%;
+    height: 4px;
+    background: #96bb7c;
+    position: relative;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .line div div .arrow-box {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 29px;
+    height: 14px;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #96bb7c;
+    position: absolute;
+    top: 10px;
+    left: 390px;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .line div div .arrow-box::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #96bb7c;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .percent-line2 div div {
+    width: 98%;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .percent-line2 div div .arrow-box {
+    left: 450px;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .percent-line3 div div {
+    width: 97%;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .percent-line3 div div .arrow-box {
+    left: 445px;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .percent-line4 div div {
+    width: 88%;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .percent-line4 div div .arrow-box {
+    left: 405px;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .percent-line5 div div {
+    width: 92%;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .percent-line5 div div .arrow-box {
+    left: 420px;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .btn-container {
+    display: flex;
+    width: 412px;
+    height: 50px;
+    margin-top: 50px;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .btn-container .btn1 {
+    width: 112px;
+    height: 50px;
+    background: #96bb7c;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50px;
+    font-size: 11px;
+  }
+  main .my-bio-part .my-bio-text .my-bio-percent .btn-container .btn2 {
+    width: 157px;
+    height: 50px;
+    background: #6c757d;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50px;
+    font-size: 11px;
+    margin-left: 5px;
+  }
+  main .my-portfolio-part {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .my-portfolio-part h1 {
+    font-weight: 400;
+    margin-top: 100px;
+    font-size: 48px;
+  }
+  main .my-portfolio-part nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  main .my-portfolio-part nav p {
+    margin-left: 25px;
+    color: #939393;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  main .my-portfolio-part nav p:hover {
+    color: #96bb7c;
+    transition: 0.2s;
+  }
+  main .my-portfolio-part .photos-container {
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+  }
+  main .my-portfolio-part .photos-container .column-1, main .my-portfolio-part .photos-container .column-2, main .my-portfolio-part .photos-container .column-3 {
+    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .my-portfolio-part .photos-container .column-1 .vol3-photo, main .my-portfolio-part .photos-container .column-1 .animated-photo, main .my-portfolio-part .photos-container .column-2 .vol3-photo, main .my-portfolio-part .photos-container .column-2 .animated-photo, main .my-portfolio-part .photos-container .column-3 .vol3-photo, main .my-portfolio-part .photos-container .column-3 .animated-photo {
+    margin-top: 30px;
+    position: relative;
+    width: 350px;
+    height: 234px;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    transition: background 0.3s ease;
+  }
+  main .my-portfolio-part .photos-container .column-1 .vol3-photo img, main .my-portfolio-part .photos-container .column-1 .animated-photo img, main .my-portfolio-part .photos-container .column-2 .vol3-photo img, main .my-portfolio-part .photos-container .column-2 .animated-photo img, main .my-portfolio-part .photos-container .column-3 .vol3-photo img, main .my-portfolio-part .photos-container .column-3 .animated-photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  main .my-portfolio-part .photos-container .column-1 .vol3-photo h3, main .my-portfolio-part .photos-container .column-1 .vol3-photo p, main .my-portfolio-part .photos-container .column-1 .animated-photo h3, main .my-portfolio-part .photos-container .column-1 .animated-photo p, main .my-portfolio-part .photos-container .column-2 .vol3-photo h3, main .my-portfolio-part .photos-container .column-2 .vol3-photo p, main .my-portfolio-part .photos-container .column-2 .animated-photo h3, main .my-portfolio-part .photos-container .column-2 .animated-photo p, main .my-portfolio-part .photos-container .column-3 .vol3-photo h3, main .my-portfolio-part .photos-container .column-3 .vol3-photo p, main .my-portfolio-part .photos-container .column-3 .animated-photo h3, main .my-portfolio-part .photos-container .column-3 .animated-photo p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  main .my-portfolio-part .photos-container .column-1 .vol3-photo h3, main .my-portfolio-part .photos-container .column-1 .animated-photo h3, main .my-portfolio-part .photos-container .column-2 .vol3-photo h3, main .my-portfolio-part .photos-container .column-2 .animated-photo h3, main .my-portfolio-part .photos-container .column-3 .vol3-photo h3, main .my-portfolio-part .photos-container .column-3 .animated-photo h3 {
+    font-weight: 400;
+    font-size: 25px;
+  }
+  main .my-portfolio-part .photos-container .column-1 .vol3-photo p, main .my-portfolio-part .photos-container .column-1 .animated-photo p, main .my-portfolio-part .photos-container .column-2 .vol3-photo p, main .my-portfolio-part .photos-container .column-2 .animated-photo p, main .my-portfolio-part .photos-container .column-3 .vol3-photo p, main .my-portfolio-part .photos-container .column-3 .animated-photo p {
+    top: 60%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #96bb7c;
+  }
+  main .my-portfolio-part .photos-container .column-1 .vol3-photo:hover img, main .my-portfolio-part .photos-container .column-1 .animated-photo:hover img, main .my-portfolio-part .photos-container .column-2 .vol3-photo:hover img, main .my-portfolio-part .photos-container .column-2 .animated-photo:hover img, main .my-portfolio-part .photos-container .column-3 .vol3-photo:hover img, main .my-portfolio-part .photos-container .column-3 .animated-photo:hover img {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+  main .my-portfolio-part .photos-container .column-1 .vol3-photo:hover h3, main .my-portfolio-part .photos-container .column-1 .vol3-photo:hover p, main .my-portfolio-part .photos-container .column-1 .animated-photo:hover h3, main .my-portfolio-part .photos-container .column-1 .animated-photo:hover p, main .my-portfolio-part .photos-container .column-2 .vol3-photo:hover h3, main .my-portfolio-part .photos-container .column-2 .vol3-photo:hover p, main .my-portfolio-part .photos-container .column-2 .animated-photo:hover h3, main .my-portfolio-part .photos-container .column-2 .animated-photo:hover p, main .my-portfolio-part .photos-container .column-3 .vol3-photo:hover h3, main .my-portfolio-part .photos-container .column-3 .vol3-photo:hover p, main .my-portfolio-part .photos-container .column-3 .animated-photo:hover h3, main .my-portfolio-part .photos-container .column-3 .animated-photo:hover p {
+    opacity: 1;
+  }
+  main .my-portfolio-part .photos-container .column-2 .house-photo, main .my-portfolio-part .photos-container .column-2 .wow-photo, main .my-portfolio-part .photos-container .column-3 .house-photo, main .my-portfolio-part .photos-container .column-3 .wow-photo {
+    width: 350px;
+    height: 526px;
+    margin-left: 50px;
+  }
+  main .my-portfolio-part .photos-container .column-2 .house-photo h3, main .my-portfolio-part .photos-container .column-2 .wow-photo h3, main .my-portfolio-part .photos-container .column-3 .house-photo h3, main .my-portfolio-part .photos-container .column-3 .wow-photo h3 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  main .my-portfolio-part .photos-container .column-2 .wow-photo, main .my-portfolio-part .photos-container .column-3 .wow-photo {
+    margin-left: 100px;
+  }
+  main .my-portfolio-part .photos-container .column-2 .moki-photo, main .my-portfolio-part .photos-container .column-2 .cream-photo, main .my-portfolio-part .photos-container .column-3 .moki-photo, main .my-portfolio-part .photos-container .column-3 .cream-photo {
+    height: 250px;
+    margin-left: 50px;
+  }
+  main .my-portfolio-part .photos-container .column-2 .moki-photo h3, main .my-portfolio-part .photos-container .column-2 .cream-photo h3, main .my-portfolio-part .photos-container .column-3 .moki-photo h3, main .my-portfolio-part .photos-container .column-3 .cream-photo h3 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  main .my-portfolio-part .photos-container .column-2 .cream-photo, main .my-portfolio-part .photos-container .column-3 .cream-photo {
+    height: 234px;
+    margin-left: 100px;
+  }
 }/*# sourceMappingURL=style.css.map */
